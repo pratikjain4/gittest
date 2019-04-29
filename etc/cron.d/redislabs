@@ -1,0 +1,1 @@
+*/5 * * * *     root    /opt/redislabs/bin/ccs_rdb_rotate.sh 5min 24
