@@ -1,0 +1,7 @@
+---
+  - name: Our Main Play
+    hosts: localhost
+    gather_facts: false
+    tasks:
+      - name: Trying out a debug module
+        debug: msg="Ansible is working!"

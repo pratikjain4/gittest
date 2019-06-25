@@ -1,0 +1,10 @@
+---
+  - hosts: all
+    connection: local
+    vars:
+      motd_message: "Hello User\nWelcome to Ansible !\n\n"
+    tasks:
+    - name: sample motd
+      copy:
+        dest: /etc/motd
+        content: "{{motd_message}}"

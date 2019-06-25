@@ -1,0 +1,15 @@
+---
+  - name: Play for WEB
+    hosts: all
+    gather_facts: no
+    vars:
+      motd_message: "Hello User\nWelcome to Ansible !\n\n"
+    tasks:
+    - name: Install cowsay 
+      apt:
+        name: cowsay
+        state: present
+    - name: Check if python installed 
+      apt:
+        name: python
+        state: present
